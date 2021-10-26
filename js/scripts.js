@@ -55,3 +55,4 @@ function handleSubmit(event){
     const form = new FormData(this)
     console.log(form.get('name'))
 }
+
