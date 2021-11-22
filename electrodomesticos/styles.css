@@ -67,7 +67,6 @@
 
 body {
   margin: 0;
-  padding: 0 10%;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
@@ -83,31 +82,33 @@ body {
   background: #0c2941;
 }
 
+.lista-electrodomesticos{
+  font-size: 20px;
+}
+
+.lista-electrodomesticos li{
+  text-align: left;
+}
+
+.icons-electrodomesticos img{
+  width: 20px;
+}
+
+.link-electrodomesticos{
+  text-decoration: none;
+  color: black;
+}
+
 header{
   height: 100vh;
 }
 
 .bg-header{
-  background-image: url('../assets/img/fondo-header1.png');
+  background-image: url('../assets/img/fondo-header1.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  
 }
-
-.title-lavador{
-  margin-top: 50px;
-  margin-bottom: 40px;
-}
-
-.linea-arriba{
-  width: 80%;
-  height: 1px;
-  background-color: currentColor;
-  margin: 0 auto;
-}
-
-
 
 hr {
   margin: 1rem 0;
@@ -171,10 +172,6 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1rem;
-}
-
-.text-title{
-  font-size: 1rem !important;
 }
 
 p {
@@ -517,6 +514,7 @@ progress {
   font-weight: 300;
 }
 
+
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
@@ -526,6 +524,7 @@ progress {
   .display-1 {
     font-size: 5rem;
   }
+  
 }
 
 .display-2 {
@@ -623,7 +622,37 @@ progress {
   content: "— ";
 }
 
+.button-whatsapp{
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  padding: 6px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 1.3rem;
+  background-color: #02C200;
+  text-decoration: none;
+}
 
+.button-whatsapp:hover{
+  background: #000;
+}
+
+.whats{
+  margin-right: 7px;
+}
+
+.linea-arriba {
+  width: 80%;
+  height: 1px;
+  background-color: currentColor;
+  margin: 0 auto;
+} 
+
+.title-lavador {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
 
 .img-fluid {
   max-width: 100%;
@@ -680,6 +709,9 @@ progress {
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
+  }
+  .sobremi{
+    padding: 0 10%;
   }
 }
 @media (min-width: 1200px) {
@@ -3680,6 +3712,9 @@ textarea.form-control-lg {
     right: 0;
     left: auto;
   }
+  .lista-electrodomesticos{
+    padding: 0 350px;
+  }
 }
 @media (min-width: 1400px) {
   .dropdown-menu-xxl-start {
@@ -3697,6 +3732,7 @@ textarea.form-control-lg {
     right: 0;
     left: auto;
   }
+
 }
 .dropup .dropdown-menu[data-bs-popper] {
   top: auto;
@@ -4143,7 +4179,6 @@ textarea.form-control-lg {
 }
 
 @media (min-width: 576px) {
-
   .navbar-expand-sm {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -5620,7 +5655,6 @@ textarea.form-control-lg {
 }
 
 @media (min-width: 576px) {
-
   .modal-dialog {
     max-width: 500px;
     margin: 1.75rem auto;
@@ -5671,9 +5705,6 @@ textarea.form-control-lg {
 }
 
 @media (max-width: 575.98px) {
-  .body{
-    padding: 0 !important;
-  }
   .modal-fullscreen-sm-down {
     width: 100vw;
     max-width: none;
@@ -9602,11 +9633,6 @@ textarea.form-control-lg {
     margin-left: 3rem !important;
   }
 
-  .mx-lg-6{
-    margin-right: 0rem !important;
-    margin-left: 10rem !important;
-  }
-
   .mx-lg-auto {
     margin-right: auto !important;
     margin-left: auto !important;
@@ -11511,7 +11537,7 @@ html {
   padding: 1rem;
 }
 .portfolio-modal .portfolio-modal-title {
-  font-size: 2.25rem;
+  font-size: 1.6rem;
   line-height: 2rem;
 }
 @media (min-width: 992px) {
